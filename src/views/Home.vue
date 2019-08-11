@@ -1,14 +1,17 @@
 <template>
   <div class="home">
     <p>{{ value }}</p>
+    <JHeader />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+import JHeader from "@/components/JHeader.vue"
 export default {
   name: "home",
-  components: {},
+  components: {
+    JHeader
+  },
   data() {
     return {
       value: "首页"

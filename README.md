@@ -1,4 +1,4 @@
-# cli-study
+# vue cli3 初始化项目配置
 
 ## Project setup
 ```
@@ -27,3 +27,4 @@ yarn run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
