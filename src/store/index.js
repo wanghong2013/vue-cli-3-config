@@ -3,6 +3,7 @@ import Vuex from "vuex";
 
 import app from "./modules/app";
 import user from "./modules/user";
+import counter from "./modules/counter";
 
 Vue.use(Vuex);
 
@@ -10,7 +11,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   modules: {
     app,
-    user
+    user,
+    counter
   },
   state: {},
   mutations: {},
