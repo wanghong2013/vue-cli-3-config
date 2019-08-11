@@ -1,9 +1,6 @@
-import Vue from "vue";
+import  Vue from "vue";
 const getters = {
-  // device: state => state.app.device,
-  // theme: state => state.app.theme,
-  // color: state => state.app.color,
-  // token: state => state.user.token,
+  count: state => state.counter.count
 };
 
 export default getters;
