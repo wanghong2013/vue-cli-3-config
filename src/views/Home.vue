@@ -5,6 +5,7 @@
     <p>{{ num }}</p>
     <button @click="changeNum">改变num</button>
     <p>{{ $store.state.counter.count }}</p>
+    <p><button @click="changeCount">改变count</button></p>
   </div>
 </template>
 
@@ -24,6 +25,9 @@ export default {
   methods: {
     changeNum() {
       this.num++;
+    },
+    changeCount(){
+      console.log(this.$store,'changeCount')
     }
   },
   mounted() {
