@@ -5,7 +5,9 @@
     <p>{{ num }}</p>
     <button @click="changeNum">改变num</button>
     <p>{{ $store.state.counter.count }}</p>
-    <p><button @click="changeCount">改变count</button></p>
+    <p>
+      <button @click="changeCount">改变count</button>
+    </p>
   </div>
 </template>
 
@@ -26,13 +28,10 @@ export default {
     changeNum() {
       this.num++;
     },
-    changeCount(){
-      this.$store.commit('updateCount')
-      console.log(this.$store,'changeCount')
+    changeCount() {
+      this.$store.commit("updateCount");
     }
   },
-  mounted() {
-    console.log(this.$store, "$store");
-  }
+  mounted() {}
 };
 </script>
