@@ -27,6 +27,7 @@ export default {
       this.num++;
     },
     changeCount(){
+      this.$store.commit('updateCount')
       console.log(this.$store,'changeCount')
     }
   },
