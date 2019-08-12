@@ -1,6 +1,6 @@
 const counter = {
   state: {
-    count: 0
+    count: 10
   },
   mutations: {
     updateCount(state) {
