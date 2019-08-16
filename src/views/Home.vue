@@ -6,7 +6,7 @@
     <button @click="changeCount">改变count</button>
     <hr />
     <p>n的值是 {{ n }}</p>
-    <p>计算属性m  {{ m}}</p>
+    <p>计算属性m {{ m }}</p>
   </div>
 </template>
 

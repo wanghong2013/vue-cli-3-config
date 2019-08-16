@@ -1,5 +1,3 @@
-import Vue from "vue";
-
 const app = {
   state: {},
   mutations: {},

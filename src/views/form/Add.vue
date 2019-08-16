@@ -8,7 +8,7 @@
 import { Input } from "ant-design-vue";
 export default {
   name: "formadd",
-  components:{
+  components: {
     Input
   },
   data() {
