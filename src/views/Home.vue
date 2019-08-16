@@ -3,7 +3,7 @@
     <JHeader />
 
     <p>$store.state.counter.count= {{ $store.state.counter.count }}</p>
-    <button @click="changeCount">改变count</button>
+    <a-button type="primary" @click="changeCount">改变count</a-button>
     <hr />
     <p>n的值是 {{ n }}</p>
     <p>计算属性m {{ m }}</p>
