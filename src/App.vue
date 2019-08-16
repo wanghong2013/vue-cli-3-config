@@ -1,8 +1,19 @@
 <template>
   <div id="app">
+    <JHeader />
     <router-view />
   </div>
 </template>
+<script>
+
+import JHeader from "@/components/JHeader.vue";
+export default {
+  name:"app",
+  components:{
+    JHeader
+  }
+}
+</script>
 
 <style lang="scss">
 #app {

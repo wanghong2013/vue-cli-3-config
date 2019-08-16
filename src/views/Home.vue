@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <JHeader />
 
     <p>$store.state.counter.count= {{ $store.state.counter.count }}</p>
     <a-button type="primary" @click="changeCount">改变count</a-button>
@@ -11,11 +10,11 @@
 </template>
 
 <script>
-import JHeader from "@/components/JHeader.vue";
+
 export default {
   name: "home",
   components: {
-    JHeader
+
   },
   created() {
     console.log(this.$store.state.count, "created");
