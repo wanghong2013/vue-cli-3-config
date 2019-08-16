@@ -1,11 +1,12 @@
 <template>
   <div class="home">
-    <p>{{ value }}</p>
     <JHeader />
-    <p>{{ num }}</p>
-    <button @click="changeNum">改变num</button>
-    <p>{{ $store.state.counter.count }}</p>
-    <p><button @click="changeCount">改变count</button></p>
+
+    <p>$store.state.counter.count= {{ $store.state.counter.count }}</p>
+    <button @click="changeCount">改变count</button>
+    <hr />
+    <p>n的值是 {{ n }}</p>
+    <p>计算属性m  {{ m}}</p>
   </div>
 </template>
 
@@ -16,22 +17,32 @@ export default {
   components: {
     JHeader
   },
+  created() {
+    console.log(this.$store.state.count, "created");
+  },
   data() {
     return {
       value: "首页",
-      num: 0
+      n: this.$store.state.counter.count
     };
   },
+
+  computed: {
+    m() {
+      return this.$store.state.counter.count;
+    }
+  },
+
   methods: {
     changeNum() {
       this.num++;
     },
-    changeCount(){
-      console.log(this.$store,'changeCount')
+    changeCount() {
+      this.$store.commit("updateCount");
     }
   },
   mounted() {
-    console.log(this.$store, "$store");
+    console.log(this.$store, "mounted");
   }
 };
 </script>

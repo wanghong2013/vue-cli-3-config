@@ -1,11 +1,10 @@
-import Vue from 'vue';
 const counter = {
   state: {
-    count: 0
+    count: 10
   },
   mutations: {
-    updateCount() {
-        state.count += 1;
+    updateCount(state) {
+      state.count += 1;
     }
   },
   actions: {}
