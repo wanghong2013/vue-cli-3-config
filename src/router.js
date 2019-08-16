@@ -30,6 +30,12 @@ export default new Router({
       name: "formAdd",
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/form/Add.vue")
+    },
+    {
+      path: "/jsx/demo1",
+      name: "jsxdemo1",
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/jsx/JsxDemo1.vue")
     }
   ]
 });
