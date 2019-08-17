@@ -48,7 +48,14 @@ export default new Router({
       name: "slotdemo01",
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/slot/Soltdemo01.vue")
+    },
+    {
+      path: "/slot/slotdemo02",
+      name: "slotdemo01",
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/slot/Soltdemo02.vue")
     }
+
 
   ]
 });
